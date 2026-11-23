@@ -1,0 +1,20 @@
+# Entornos y caches locales
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Credenciales y configuracion local
+.env
+.env.*
+!.env.example
+
+# Archivos de compilacion y del editor
+.pio/
+.vscode/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz

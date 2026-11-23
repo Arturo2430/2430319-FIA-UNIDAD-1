@@ -1,0 +1,39 @@
+tarea_investigacion:
+  description: >
+    Investiga el panorama actual, los principales líderes, eventos recientes y el impacto de {topic}.
+    Asegúrate de buscar información relevante considerando que la fecha actual es {current_date}.
+    Incluye las posturas principales y menciona claramente de dónde extrajiste la información.
+  expected_output: >
+    Una lista detallada con los 8 puntos clave más relevantes sobre {topic}, 
+    explicando el contexto de cada uno y citando la fuente de la información.
+  agent: investigador_informacion
+
+tarea_redaccion:
+  description: >
+    Usando los hallazgos de la investigación, redacta un artículo de noticias profesional y 
+    cautivador sobre {topic}. El artículo debe tener un titular llamativo que sea algo exagerado, una bajada o subtitulo, una  
+    lead y el cuerpo de la noticia.
+  expected_output: >
+    Un artículo periodístico completo en formato markdown con las secciones: 
+    Titular, Subtitulo, Lead, Cuerpo de la Noticia, y Fuentes Consultadas.
+  agent: redactor_noticia
+
+# validar_fuentes:
+#   description: >
+#     Evalúa la confiabilidad, relevancia y posibles sesgos de las fuentes de información 
+#     utilizadas en la investigación sobre {topic}. Asegúrate de que la información provenga 
+#     de fuentes fidedignas y contrastadas.
+#   expected_output: >
+#     Un informe detallado markdown que clasifique cada fuente utilizada en la investigación, 
+#     indicando su nivel de confiabilidad, relevancia y posibles sesgos. 
+#     Incluye recomendaciones sobre qué fuentes son más fiables y cuáles deben ser tratadas con precaución.
+#   agent: comparador_fuentes
+
+# crear_pagina:
+#   description: >
+#     Toma el artículo periodístico generado por el redactor y conviértelo en una página web completa.
+#     Debes estructurar el contenido con etiquetas semánticas (header, article, h1, p) y agregar 
+#     estilos CSS integrados para que luzca como un sitio moderno de noticias profesionales.
+#   expected_output: >
+#     El código fuente HTML completo y funcional de la noticia (incluyendo <html>, <head> y <body>).
+#   agent: web_creador

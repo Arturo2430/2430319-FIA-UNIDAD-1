@@ -1,0 +1,16 @@
+{
+  "seed": 1,
+  "training_samples": 1000,
+  "test_samples": 10000,
+  "epochs": 100,
+  "hidden_size": 100,
+  "learning_rate": 0.005,
+  "keep_probability": 0.5,
+  "train_sse": 0.06112221263762592,
+  "train_accuracy": 0.998,
+  "test_sse": 0.2762697003874318,
+  "test_accuracy": 0.8782,
+  "elapsed_seconds": 22.479727438000282,
+  "numpy_version": "2.5.2",
+  "python_version": "3.14.8"
+}
